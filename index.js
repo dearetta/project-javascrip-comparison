@@ -12,6 +12,25 @@ if (myAge < hisAge){
     
 }
 
+let resultAge = myAge + hisAge
+console.log(resultAge);
+
+
+switch(resultAge > 30)
+{
+    case true:
+        console.log("The result of both of your ages are older than 30");
+        break
+
+    case false:
+        console.log("The result of both of your ages are not older than 30");
+        break
+
+    default:
+        console.log("The result of your age is 39");
+               
+}
+
 const personDea = {
     name: 'Dea',
     age: '19'
@@ -22,7 +41,7 @@ const personRafi = {
     age: '21'
 }
 
-switch (personDea.age - 1 == personRafi ) {
+switch (personDea.age + 2 == personRafi ) {
     case true:
         console.log("Your age plus one equals to his age");
         break
