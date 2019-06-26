@@ -1,58 +1,57 @@
-const myAge = 19
-const hisAge = 20
+let myAge = prompt('How old are you?')
+let hisAge = prompt('How old is he?')
 
-if (myAge < hisAge){
+if (myAge < hisAge) {
     console.log("My age is younger than him");
-    
+
 } else if (myAge > hisAge) {
     console.log("Your age is still younger than him");
-    
-}else {
+
+} else {
     console.log("You are younger than him");
-    
+
 }
 
-let resultAge = myAge + hisAge
+let resultAge = parseInt(myAge) + parseInt(hisAge)
 console.log(resultAge);
-
-
-switch(resultAge > 30)
-{
-    case true:
-        console.log("The result of both of your ages are older than 30");
+switch (true) {
+    case 20 > resultAge > 30:
+        console.log("OLD");
         break
 
-    case false:
-        console.log("The result of both of your ages are not older than 30");
+    case resultAge = 30:
+        console.log("NOT OLD");
         break
 
     default:
-        console.log("The result of your age is 39");
-               
+        console.log(`The result of your age is ${resultAge}` );
+
 }
 
 const personDea = {
     name: 'Dea',
-    age: '19'
+    age: 19
 }
 
 const personRafi = {
     name: 'Rafi',
-    age: '21'
+    age: 21
 }
 
-switch (personDea.age + 2 == personRafi ) {
-    case true:
-        console.log("Your age plus one equals to his age");
+const a = 4;
+
+switch (true) {
+    case parseInt(personDea.age) + a == parseInt(personRafi.age):
+        console.log("you have the same age");
         break
-    
-    case false:
-        console.log("it's wrong");
+
+    case parseInt(personDea.age) + a > parseInt(personRafi.age):
+        console.log("Dea is older than Rafi");
         break
 
     default:
         console.log("Your age is 19 his age is 21");
-        
-        
-        
+
+
+
 }
